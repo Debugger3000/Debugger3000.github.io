@@ -292,81 +292,23 @@ function removeBreathe(){
 }
 
 // bubble floating animations
-
 function bubbleUp(stream){
-
-    console.log("BUBBLE RAN...");
-
      for(let i = 0; i<bubbleList.length; i++){
-
             if(stream == 0 && i < 3){
                 this.setTimeout(function(){
                     bubbleList[i].classList.add('bubble-animation');
-                    
-                    
                     },(i * 6000) + 4000);
-
             }
             else if(stream == 1){
                 this.setTimeout(function(){
                     bubbleList[i].classList.add('bubble-animation');
-        
-        
                 },(i * 1000) + 2000);
             }
-
-       
     }
 }
 
 function removeBubble(){
-
     for(let i = 0; i < bubbleList.length; i++){
-        
-        bubbleList[i].classList.remove('bubble-animation');
-        
+        bubbleList[i].classList.remove('bubble-animation');   
     }
-
 }
-
-// --------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let logos = document.getElementsByClassName('logoclass');
-
-// for(let i =0; i < 6; i++){
-    
-//     this.setTimeout(function(){
-//         //do nothing but wait 2 seconds
-//         //console.log(i);
-//         logos[i].classList.add('logoanimation');
-//         console.log("logoS:"+i);
-
-//     },500 * i);
-
-    
-// }
-
-
-
-
-
-
-
-
-
-
-
